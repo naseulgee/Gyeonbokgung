@@ -84,8 +84,23 @@ header{
 
 
 .depth02{
+    height: 0;
+    overflow: hidden;
     position: absolute;
     top: 57px;
+    transition: 0.5s;
+}
+.nav_menu01:hover .depth02{
+    height: 308px;
+}
+.nav_menu02:hover .depth02{
+    height: 246px;
+}
+.nav_menu03:hover .depth02{
+    height: 205px;
+}
+.nav_menu04:hover .depth02{
+    height: 246px;
 }
 .depth02 a{
     background-color: #de574c;

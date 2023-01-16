@@ -22,15 +22,6 @@ $(function(){
 		});
 	}
 
-	$('.depth02').hide();
-	$('.depth01>li').mouseenter(function () {
-		$('.depth02').slideUp();
-		$(this).children('.depth02').slideDown();
-	});
-	$('.depth02').mouseleave(function () {
-		$('.depth02').slideUp();
-	});
-
 	if($(".bxslider").length > 0){
 		$('.bxslider.auto-bx').bxSlider({
 			controls: false
