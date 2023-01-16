@@ -16,7 +16,6 @@ function LoadIncludeFile() {
 
 $(function(){
 	LoadIncludeFile();
-
 	if($(".include").length > 0 && $("body").hasClass("main")){
 		$(".include a").each(function(){
 			$(this).attr("href",$(this).attr("href").replace("../../","./"));
@@ -31,26 +30,12 @@ $(function(){
 	$('.depth02').mouseleave(function () {
 		$('.depth02').slideUp();
 	});
-	
-	$('.sub_btn_move').click(function(){
-		var cl_name = "."+this.dataset.scroll;
-		var boxOffset = $(cl_name).offset().top-150;
-		
-		$('html,body').animate({
-			scrollTop:boxOffset
-		})
-	});
-	
+
 	if($(".bxslider").length > 0){
 		$('.bxslider.auto-bx').bxSlider({
 			controls: false
 			, auto: true
 			, pause: 2500
-		});
-		$('.bxslider.bx-vertical').bxSlider({
-			auto: true,
-			mode: 'vertical',
-			pager: false,
 		});
 		$('.bxslider.loop').bxSlider({
 			minSlides: 3
@@ -62,6 +47,45 @@ $(function(){
 			, auto: true
 			, autoControls: true
 			, controls: false
+		});
+	}
+
+	if($('.calligraphy').length > 0){
+		$('.calligraphy').animate({
+			top: 0,
+			opacity: 1
+		},2000);
+	}
+
+	if ($(".course").length > 0) {
+		$('.course_img div').mouseenter(function(){
+			var li = $(this).index();
+			$('.course_li li').eq(li).addClass('on');
+			$(this).children('img:last-child').animate({
+				opacity: 1
+			});
+		});
+		$('.course_img div').mouseleave(function(){
+			var li = $(this).index();
+			$('.course_li li').eq(li).removeClass('on');
+			$(this).children('img:last-child').animate({
+				opacity: 0
+			});
+		});
+
+		$('.course_li li').mouseenter(function(){
+			var li = $(this).index();
+			$('.course_img div').eq(li).children('img:last-child').animate({
+				opacity: 1
+			});
+			$(this).addClass('on');
+		});
+		$('.course_li li').mouseleave(function(){
+			var li = $(this).index();
+			$('.course_img div').eq(li).children('img:last-child').animate({
+				opacity: 0
+			});
+			$(this).removeClass('on');
 		});
 	}
 });

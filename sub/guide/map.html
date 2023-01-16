@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--인코딩 설정-->
+    <meta name="content-language" content="kr"><!--기록된 언어-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--ie를 최신 코드로 적용-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"><!--화면 배율-->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>문화재청 경복궁</title>
+    <!-- 캐쉬 파기 시간: 캐쉬가 쌓이지 않고 매번 새로운 페이지 로딩 세팅 -->
+    <meta http-equiv="Cache-Control" content="no-cache"/> 
+    <meta http-equiv="Expires" content="-1"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+
+    <link rel="stylesheet" type="text/css" href="../../css/basic.css">
+    <link rel="stylesheet" type="text/css" href="../../css/guide.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+    <script src="../../js/common.js"></script>
+</head>
+
+<body>
+    <include data-href="../../include/header.html"></include>
+
+    <section>
+        <div class="side_nav">
+            <h1>관람 안내</h1>
+            <hr>
+            <ul>
+                <li><a href="#">관람 규칙 및 규정</a></li>
+                <li><a href="../../sub/guide/course.html">관람 코스 및<br>편의 시설 안내</a></li>
+                <li><a href="#">관람 시간 및 요금</a></li>
+                <li><a href="#">관람 예약 및 신청</a></li>
+                <li class="on"><a href="../../sub/guide/map.html">오시는 길</a></li>
+                <li><a href="#">주차 및 요금 안내</a></li>
+                <li><a href="#">주변 둘러보기</a></li>
+            </ul>
+        </div>
+        <div class="article">
+            <div class="map">
+                <h1>오시는 길</h1>
+                <hr>
+                <div class="box">
+                    <div class="daum">
+                        <!-- * 카카오맵 - 지도퍼가기 -->
+                        <!-- 1. 지도 노드 -->
+                        <div id="daumRoughmapContainer1673889434452" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                        <!-- 3. 실행 스크립트 -->
+                        <script charset="UTF-8">
+                            new daum.roughmap.Lander({
+                                "timestamp" : "1673889434452",
+                                "key" : "2dg25",
+                                "mapWidth" : "850",
+                                "mapHeight" : "400"
+                            }).render();
+                        </script>
+                    </div>
+                    <ul class="transport">
+                        <li><div></div><p>지하철</p>
+                            <ul>
+                                <li>- 3호선 경복궁역 5번출구 도보 약 5분</li>
+                                <li>- 5호선 광화문역 2번출구 도보 약 10분</li>
+                            </ul>
+                        </li>
+                        <li><hr></li>
+                        <li><div></div><p>버스</p>
+                            <ul>
+                                <li>- 경복궁 남측 : 109, 171, 272, 601, 606, 1020, 7025</li>
+                                <li>- 경복궁 서측 : 1020, 1711, 7016, 7018, 7022, 7212, 6011, 9703</li>
+                                <li>- 자세한 버스노선은 서울시 홈페이지(http://bus.seoul.go.kr)를 참고하시기 바랍니다.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <include data-href="../../include/footer.html"></include>
+</body>
+
+</html>

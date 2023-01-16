@@ -68,7 +68,7 @@ hr{
 .course_img{
     width: 950px;
     height: 659px;
-    background-image: url(../sub/images/guide/course.png);
+    background-image: url(../images/guide/course.png);
     background-repeat: no-repeat;
     position: relative;
 }
@@ -151,7 +151,7 @@ hr{
     padding-left: 25px;
     margin-left: 50px;
     margin-bottom: 15px;
-    background-image: url(../sub/images/guide/number.png);
+    background-image: url(../images/guide/number.png);
     background-repeat: no-repeat;
     cursor: default;
 }
