@@ -38,29 +38,30 @@
 ## 🖥 미리보기
 <table>
     <tr>
-        <th width="50%">메인 페이지</th>
-        <th width="50%">모바일 페이지</th>
+        <th colspan="4">메인 페이지</th>
+        <th colspan="2">모바일 페이지</th>
     </tr>
     <tr>
-        <td><img alt="메인 이미지" src="https://user-images.githubusercontent.com/73747247/212722723-9ba23534-672a-470f-b80f-c9f68e29b54c.png"/></td>
-        <td><img alt="모바일 이미지" src="https://user-images.githubusercontent.com/73747247/212741489-0e5ba24a-ce03-4592-a569-633bfcf1b03f.gif"/></td>
+        <td colspan="4"><img alt="메인 이미지" src="https://user-images.githubusercontent.com/73747247/212722723-9ba23534-672a-470f-b80f-c9f68e29b54c.png"/></td>
+        <td colspan="2"><img alt="모바일 이미지" src="https://user-images.githubusercontent.com/73747247/212741489-0e5ba24a-ce03-4592-a569-633bfcf1b03f.gif"/></td>
     </tr>
     <tr>
-        <th width="50%">관람코스 및 편의시설 안내 페이지</th>
-        <th width="50%">오시는 길 페이지</th>
+        <th colspan="3">관람코스 및 편의시설 안내 페이지</th>
+        <th colspan="3">오시는 길 페이지</th>
     </tr>
     <tr>
-        <td><img alt="관람코스 및 편의시설 안내 이미지" src="https://user-images.githubusercontent.com/73747247/212724892-adcd0058-c30f-46b6-b690-d78755fd664c.gif"/></td>
-        <td><img alt="오시는 길 이미지" src="https://user-images.githubusercontent.com/73747247/212738270-d4e626c6-8cff-4c24-8549-9ef326e91cc9.gif"/></td>
+        <td colspan="3"><img alt="관람코스 및 편의시설 안내 이미지" src="https://user-images.githubusercontent.com/73747247/212724892-adcd0058-c30f-46b6-b690-d78755fd664c.gif"/></td>
+        <td colspan="3"><img alt="오시는 길 이미지" src="https://user-images.githubusercontent.com/73747247/212738270-d4e626c6-8cff-4c24-8549-9ef326e91cc9.gif"/></td>
     </tr>
   <tr>
-        <th width="33.33%">개인정보 처리방침 페이지</th>
-        <th width="33.33%">저작권 정책 페이지</th>
-        <th width="33.33%">사이트 맵 페이지</th>
+        <th colspan="2">개인정보 처리방침 페이지</th>
+        <th colspan="2">저작권 정책 페이지</th>
+        <th colspan="2">사이트 맵 페이지</th>
     </tr>
     <tr>
-        <td><img alt="개인정보 처리방침 이미지" src="https://user-images.githubusercontent.com/73747247/212722734-6cc6a7a6-a422-4d91-a754-261fb7062f0f.png"/></td>
-        <td><img alt="저작권 정책 이미지" src="https://user-images.githubusercontent.com/73747247/212722739-cd9f1fcb-c543-4317-a45c-7455bc9c335f.png"/></td>
-        <td><img alt="사이트 맵 이미지" src="https://user-images.githubusercontent.com/73747247/212722731-e80a161f-6ec3-4ef4-a1b3-09d73ae0d29a.png"/></td>
+        <td colspan="2"><img alt="개인정보 처리방침 이미지" src="https://user-images.githubusercontent.com/73747247/212722734-6cc6a7a6-a422-4d91-a754-261fb7062f0f.png"/></td>
+        <td colspan="2"><img alt="저작권 정책 이미지" src="https://user-images.githubusercontent.com/73747247/212722739-cd9f1fcb-c543-4317-a45c-7455bc9c335f.png"/></td>
+        <td colspan="2"><img alt="사이트 맵 이미지" src="https://user-images.githubusercontent.com/73747247/212722731-e80a161f-6ec3-4ef4-a1b3-09d73ae0d29a.png"/></td>
     </tr>
+    <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
 </table>
