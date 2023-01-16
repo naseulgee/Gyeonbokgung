@@ -2,21 +2,28 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"><!--인코딩 설정-->
+    <meta name="content-language" content="kr"><!--기록된 언어-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--ie를 최신 코드로 적용-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"><!--화면 배율-->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>문화재청 경복궁</title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="../css/m_basic.css">
-    <link rel="stylesheet" type="text/css" href="../css/m_gyeonbokgung.css">
-    <link rel="stylesheet" href="../css/jquery.bxslider.css">
+    <!-- 캐쉬 파기 시간: 캐쉬가 쌓이지 않고 매번 새로운 페이지 로딩 세팅 -->
+    <meta http-equiv="Cache-Control" content="no-cache"/> 
+    <meta http-equiv="Expires" content="-1"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+
+    <link rel="stylesheet" type="text/css" href="./css/m_basic.css">
+    <link rel="stylesheet" type="text/css" href="./css/m_gyeonbokgung.css">
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../js/jquery.bxslider.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
+    <script src="./js/common.js"></script>
     <script>
         $(function () {
-            $('.calligraphy').animate({
-                top: 0,
-                opacity: 1
-            },2000)
-            
             $(window).scroll(function(){
                 var winTop = $(window).scrollTop();
                 var boxOffset = $('.history').offset().top-400;
@@ -26,7 +33,7 @@
                 }else{
                     $('.history>img:last-child').removeClass('on')
                 }
-            })
+            });
             
             $('.menu_btn').click(function(){
                 $('.nav_wrap').show();
@@ -36,11 +43,11 @@
                 $('.main_nav').animate({
                     right: 0
                 },1000)
-            })
+            });
             $('.cancel').click(function(){
                 $('.nav_wrap').css('opacity',0).hide();
                 $('.main_nav').css('right',-300)
-            })
+            });
             
             $('.depth02').hide();
             $('.depth01>li').click(function(){
@@ -49,28 +56,13 @@
                 if($li == true){
                     $(this).removeClass('on');
                     $(this).children('.depth02').slideUp();
-                }else{                    $(this).addClass('on').siblings().removeClass('on');
-                      $('.depth02').slideUp();
-                      $(this).children('.depth02').slideDown();
+                }else{
+                    $(this).addClass('on').siblings().removeClass('on');
+                    $('.depth02').slideUp();
+                    $(this).children('.depth02').slideDown();
                 }
-            })
-            
-            $('.event>ul.bxslider').bxSlider({
-                pager: false
-                , auto: true
-                , pause: 2500
-            })
-            $('.banner>ul.bxslider').bxSlider({
-                minSlides: 2
-                , maxSlides: 2
-                , slideWidth: 170
-                , slideMargin: 10
-                , speed: 5000
-                , pause: 1000
-                , auto: true
-                , controls: false
-            })
-        })
+            });
+        });
     </script>
 </head>
 
@@ -138,26 +130,26 @@
         </div>
     <section>
         <div class="main_img">
-            <img src="../images/main_page/m_main_img.png" alt="경복궁">
-            <div class="calligraphy"><img src="../images/logo/Calligraphy.png" alt="경복궁 캘리그라피"></div>
+            <img src="./images/main_page/m_main_img.png" alt="경복궁">
+            <div class="calligraphy"><img src="./images/logo/Calligraphy.png" alt="경복궁 캘리그라피"></div>
         </div>
         <div class="booking">
-            <img src="../images/main_page/booking/m_booking.png" alt="경복궁 사전 예약">
+            <img src="./images/main_page/booking/m_booking.png" alt="경복궁 사전 예약">
             <div class="booking_btn">
-                <a href="#"><img src="../images/main_page/booking/m_booking_btn.png" alt="자세히 보기"></a>
+                <a href="#"><img src="./images/main_page/booking/m_booking_btn.png" alt="자세히 보기"></a>
             </div>
         </div>
         <div class="history">
-            <a href="#"><img src="../images/main_page/m_history.png" alt="경복궁 들여다보기"></a>
-            <img src="../images/main_page/m_history_text.png" alt="경복궁의 역사와 주변 둘러보기">
+            <a href="#"><img src="./images/main_page/m_history.png" alt="경복궁 들여다보기"></a>
+            <img src="./images/main_page/m_history_text.png" alt="경복궁의 역사와 주변 둘러보기">
         </div>
         <div class="event">
-            <ul class="bxslider">
-                <li><img src="../images/main_page/event/01.png" alt="경복궁 야간 특별 관람"></li>
-                <li><img src="../images/main_page/event/02.png" alt="수문장 교대 의식"></li>
-                <li><img src="../images/main_page/event/03.png" alt="장고 개방"></li>
-                <li><img src="../images/main_page/event/04.png" alt="소주방 개방"></li>
-                <li><img src="../images/main_page/event/05.png" alt="다례 체험"></li>
+            <ul class="bxslider auto-bx">
+                <li><img src="./images/main_page/event/01.png" alt="경복궁 야간 특별 관람"></li>
+                <li><img src="./images/main_page/event/02.png" alt="수문장 교대 의식"></li>
+                <li><img src="./images/main_page/event/03.png" alt="장고 개방"></li>
+                <li><img src="./images/main_page/event/04.png" alt="소주방 개방"></li>
+                <li><img src="./images/main_page/event/05.png" alt="다례 체험"></li>
             </ul>
         </div>
         <div class="contact">
@@ -168,23 +160,23 @@
             </div>
         </div>
         <div class="banner">
-            <ul class="bxslider">
-                <li><a href="http://www.cha.go.kr/cha/idx/Index.do?mn=NS_01"><img src="../images/banner/ban01.gif" alt="문화재청"></a></li>
-                <li><a href="http://www.gogung.go.kr/main.do"><img src="../images/banner/ban02.gif" alt="국립고궁박물관"></a></li>
-                <li><a href="https://www.e-minwon.go.kr/webs/main.jsp"><img src="../images/banner/ban03.gif" alt="문화재청 고객지원센터"></a></li>
-                <li><a href="http://www.k-heritage.tv/main/heritage"><img src="../images/banner/ban04.gif" alt="문화유산채널"></a></li>
-                <li><a href="http://www.heritage.go.kr/heri/idx/index.do"><img src="../images/banner/ban05.gif" alt="국가문화유산포털"></a></li>
-                <li><a href="http://www.deoksugung.go.kr/default.asp"><img src="../images/banner/ban06.gif" alt="문화재청 덕수궁"></a></li>
-                <li><a href="http://www.cdg.go.kr:9901/"><img src="../images/banner/ban07.gif" alt="문화재청 창덕궁"></a></li>
-                <li><a href="http://cgg.cha.go.kr/n_cgg/index.html"><img src="../images/banner/ban08.gif" alt="문화재청 창경궁"></a></li>
-                <li><a href="http://jm.cha.go.kr/n_jm/index.html"><img src="../images/banner/ban09.gif" alt="문화재청 종묘"></a></li>
-                <li><a href="http://www.chf.or.kr/"><img src="../images/banner/ban10.gif" alt="한국문화재단"></a></li>
-                <li><a href="http://www.acrc.go.kr/acrc/index.do"><img src="../images/banner/ban11.gif" alt="국민권익위원회"></a></li>
-                <li><a href="http://www.epeople.go.kr/jsp/user/UserMain.jsp"><img src="../images/banner/ban12.gif" alt="국민신문고"></a></li>
-                <li><a href="http://www.chf.or.kr/c1/sub2.jsp"><img src="../images/banner/ban13.gif" alt="수문장교대의식"></a></li>
-                <li><a href="http://www.korea.go.kr/main"><img src="../images/banner/ban14.gif" alt="대한민국정부"></a></li>
-                <li><a href="http://royaltombs.cha.go.kr/cha/idx/SubIndex.do?mn=RT"><img src="../images/banner/ban15.gif" alt="문화재청 조선왕릉"></a></li>
-                <li><a href="http://royalpalaces.cha.go.kr/main/PalacesIndex!main.action?mc=rp_00"><img src="../images/banner/ban16.gif" alt="문화재청 조선고궁"></a></li>
+            <ul class="bxslider mloop">
+                <li><a href="http://www.cha.go.kr/cha/idx/Index.do?mn=NS_01"><img src="./images/banner/ban01.gif" alt="문화재청"></a></li>
+                <li><a href="http://www.gogung.go.kr/main.do"><img src="./images/banner/ban02.gif" alt="국립고궁박물관"></a></li>
+                <li><a href="https://www.e-minwon.go.kr/webs/main.jsp"><img src="./images/banner/ban03.gif" alt="문화재청 고객지원센터"></a></li>
+                <li><a href="http://www.k-heritage.tv/main/heritage"><img src="./images/banner/ban04.gif" alt="문화유산채널"></a></li>
+                <li><a href="http://www.heritage.go.kr/heri/idx/index.do"><img src="./images/banner/ban05.gif" alt="국가문화유산포털"></a></li>
+                <li><a href="http://www.deoksugung.go.kr/default.asp"><img src="./images/banner/ban06.gif" alt="문화재청 덕수궁"></a></li>
+                <li><a href="http://www.cdg.go.kr:9901/"><img src="./images/banner/ban07.gif" alt="문화재청 창덕궁"></a></li>
+                <li><a href="http://cgg.cha.go.kr/n_cgg/index.html"><img src="./images/banner/ban08.gif" alt="문화재청 창경궁"></a></li>
+                <li><a href="http://jm.cha.go.kr/n_jm/index.html"><img src="./images/banner/ban09.gif" alt="문화재청 종묘"></a></li>
+                <li><a href="http://www.chf.or.kr/"><img src="./images/banner/ban10.gif" alt="한국문화재단"></a></li>
+                <li><a href="http://www.acrc.go.kr/acrc/index.do"><img src="./images/banner/ban11.gif" alt="국민권익위원회"></a></li>
+                <li><a href="http://www.epeople.go.kr/jsp/user/UserMain.jsp"><img src="./images/banner/ban12.gif" alt="국민신문고"></a></li>
+                <li><a href="http://www.chf.or.kr/c1/sub2.jsp"><img src="./images/banner/ban13.gif" alt="수문장교대의식"></a></li>
+                <li><a href="http://www.korea.go.kr/main"><img src="./images/banner/ban14.gif" alt="대한민국정부"></a></li>
+                <li><a href="http://royaltombs.cha.go.kr/cha/idx/SubIndex.do?mn=RT"><img src="./images/banner/ban15.gif" alt="문화재청 조선왕릉"></a></li>
+                <li><a href="http://royalpalaces.cha.go.kr/main/PalacesIndex!main.action?mc=rp_00"><img src="./images/banner/ban16.gif" alt="문화재청 조선고궁"></a></li>
             </ul>
         </div>
     </section>

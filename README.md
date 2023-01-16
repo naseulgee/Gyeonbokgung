@@ -38,14 +38,20 @@
 ## 🖥 미리보기
 <table>
     <tr>
-        <th width="33.33%">메인 페이지</th>
-        <th width="33.33%">관람코스 및 편의시설 안내 페이지</th>
-        <th width="33.33%">오시는 길 페이지</th>
+        <th width="50%">메인 페이지</th>
+        <th width="50%">모바일 페이지</th>
     </tr>
     <tr>
         <td><img alt="메인 이미지" src="https://user-images.githubusercontent.com/73747247/212722723-9ba23534-672a-470f-b80f-c9f68e29b54c.png"/></td>
+        <td><img alt="모바일 이미지" src="https://user-images.githubusercontent.com/73747247/212741489-0e5ba24a-ce03-4592-a569-633bfcf1b03f.gif"/></td>
+    </tr>
+    <tr>
+        <th width="50%">관람코스 및 편의시설 안내 페이지</th>
+        <th width="50%">오시는 길 페이지</th>
+    </tr>
+    <tr>
         <td><img alt="관람코스 및 편의시설 안내 이미지" src="https://user-images.githubusercontent.com/73747247/212724892-adcd0058-c30f-46b6-b690-d78755fd664c.gif"/></td>
-        <td><img alt="오시는 길 이미지" src="https://user-images.githubusercontent.com/73747247/212724981-c5452a3f-1e1b-4d89-8ff3-d582017411f4.png"/></td>
+        <td><img alt="오시는 길 이미지" src="https://user-images.githubusercontent.com/73747247/212738270-d4e626c6-8cff-4c24-8549-9ef326e91cc9.gif"/></td>
     </tr>
   <tr>
         <th width="33.33%">개인정보 처리방침 페이지</th>

@@ -39,6 +39,16 @@ $(function(){
 			, autoControls: true
 			, controls: false
 		});
+		$('.bxslider.mloop').bxSlider({
+			minSlides: 2
+			, maxSlides: 2
+			, slideWidth: 170
+			, slideMargin: 10
+			, speed: 5000
+			, pause: 1000
+			, auto: true
+			, controls: false
+		});
 	}
 
 	if($('.calligraphy').length > 0){
