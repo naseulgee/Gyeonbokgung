@@ -1,0 +1,9 @@
+*.zip
+*.psd
+*.pptx
+*.docx
+**/00_plan/
+**/ori/
+_ing/
+_form/
+**/node_modules/
