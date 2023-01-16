@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>문화재청 경복궁</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/basic.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/guide.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('.depth02').hide();
+            $('.depth01>li').mouseenter(function () {
+                $('.depth02').slideUp();
+                $(this).children('.depth02').slideDown();
+            })
+            $('.depth02').mouseleave(function () {
+                $('.depth02').slideUp();
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <div class="top_logo"><a href="http://dreamwhale.dothome.co.kr/01_Gyeonbokgung/"></a></div>
+            <div class="top_nav">
+                <ul>
+                    <li><a href="#">ENG</a></li>
+                    <li><a href="http://dreamwhale.dothome.co.kr/01_Gyeonbokgung/sub/services/sitemap/">사이트맵</a></li>
+                </ul>
+            </div>
+            <div class="main_nav">
+                <ul class="depth01">
+                    <li class="nav_menu01"><a href="#none">관람안내</a>
+                        <ul class="depth02">
+                            <li><a href="#">관람 규칙 및 규정</a></li>
+                            <li><a href="http://dreamwhale.dothome.co.kr/01_Gyeonbokgung/sub/guide/course/">관람 코스 및<br>편의 시설 안내</a></li>
+                            <li><a href="#">관람 시간 및 요금</a></li>
+                            <li><a href="#none">관람 예약 및 신청</a></li>
+                            <li><a href="http://dreamwhale.dothome.co.kr/01_Gyeonbokgung/sub/guide/map/">오시는 길</a></li>
+                            <li><a href="#">주차 및 요금 안내</a></li>
+                            <li><a href="#">주변 둘러보기</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_menu02"><a href="#none">경복궁 행사</a>
+                        <ul class="depth02">
+                            <li><a href="#">야간 특별 관람</a></li>
+                            <li><a href="#">다례 체험</a></li>
+                            <li><a href="#">장고 개방</a></li>
+                            <li><a href="#">소주방 개방</a></li>
+                            <li><a href="#">수문장 교대 의식</a></li>
+                            <li><a href="#">왕가의 산책</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_menu03"><a href="#none">자료마당</a>
+                        <ul class="depth02">
+                            <li><a href="#none">경복궁 소개</a></li>
+                            <li><a href="#">알고싶은 이야기</a></li>
+                            <li><a href="#">가이드 북</a></li>
+                            <li><a href="#">간행물</a></li>
+                            <li><a href="#">언론보도</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_menu04"><a href="#none">경복궁 관리소</a>
+                        <ul class="depth02">
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">직원소개</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자주하는 질문</a></li>
+                            <li><a href="https://www.e-minwon.go.kr/webs/menu.jsp?menu_id=info">민원 신청</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="side_nav">
+            <h1>관람 안내</h1>
+            <hr>
+            <ul>
+                <li><a href="#">관람 규칙 및 규정</a></li>
+                <li><a href="http://dreamwhale.dothome.co.kr/01_Gyeonbokgung/sub/guide/course/">관람 코스 및<br>편의 시설 안내</a></li>
+                <li><a href="#">관람 시간 및 요금</a></li>
+                <li><a href="#">관람 예약 및 신청</a></li>
+                <li class="on"><a href="http://dreamwhale.dothome.co.kr/01_Gyeonbokgung/sub/guide/map/">오시는 길</a></li>
+                <li><a href="#">주차 및 요금 안내</a></li>
+                <li><a href="#">주변 둘러보기</a></li>
+            </ul>
+        </div>
+        <div class="article">
+            <div class="map">
+                <h1>오시는 길</h1>
+                <hr>
+                <div class="box">
+                    <div class="daum">
+                        <!-- * Daum 지도 - 지도퍼가기 -->
+                        <!-- 1. 지도 노드 -->
+                        <div id="daumRoughmapContainer1486525077939" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                        <!--
+                            2. 설치 스크립트
+                            * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                        -->
+                        <script class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js">
+                        </script>
+
+                        <!-- 3. 실행 스크립트 -->
+                        <script>
+                            new daum.roughmap.Lander({
+                                "timestamp" : "1486525077939",
+                                "key" : "fthh",
+                                "mapWidth" : "850",
+                                "mapHeight" : "400",
+                            }).render();
+                        </script>
+                    </div>
+                    <ul class="transport">
+                        <li><div></div><p>지하철</p>
+                            <ul>
+                                <li>- 3호선 경복궁역 5번출구 도보 약 5분</li>
+                                <li>- 5호선 광화문역 2번출구 도보 약 10분</li>
+                            </ul>
+                        </li>
+                        <li><hr></li>
+                        <li><div></div><p>버스</p>
+                            <ul>
+                                <li>- 경복궁 남측 : 109, 171, 272, 601, 606, 1020, 7025</li>
+                                <li>- 경복궁 서측 : 1020, 1711, 7016, 7018, 7022, 7212, 6011, 9703</li>
+                                <li>- 자세한 버스노선은 서울시 홈페이지(http://bus.seoul.go.kr)를 참고하시기 바랍니다.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="wrap">
+            <div class="footer_logo"></div>
+            <address>
+               우)03045 서울특별시 종로구 사직로 161  전화번호(02)3700-3900  팩스(02)3700-3909<br>
+               COPYRIGHT 2017 BY NA, SEUL-GEE. ALL RIGHTS RESERVED.
+            </address>
+            <ul class="copyright">
+               <li><a href="http://dreamwhale.dothome.co.kr/01_Gyeonbokgung/sub/services/privacy_detail/">개인정보처리방침</a> |</li>
+               <li><a href="http://dreamwhale.dothome.co.kr/01_Gyeonbokgung/sub/services/copyright_detail/">저작권정책</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

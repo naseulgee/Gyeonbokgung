@@ -1,0 +1,225 @@
+/*-----basic-----*/
+section{
+    width: 1200px;
+    margin: 150px auto;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+}
+section>div{
+    float: left;
+}
+
+h1{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+hr{
+    border: 2px solid;
+}
+.side_nav{
+    width: 250px;
+    background-color: #483a3a;
+    border-radius: 20px;
+    color: white;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+.side_nav a{
+    display: block;
+    color: white;
+}
+.side_nav li a{
+    margin: 20px auto;
+    text-align: left;
+    cursor: pointer;
+}
+.side_nav li a:hover{
+    font-weight: bold;
+    color: #de574c;
+}
+.side_nav ul li.on a{
+    font-weight: bold;
+    color: #de574c;
+}
+
+.article{
+    width: 930px;
+    padding: 30px;
+    min-height: 700px;
+    box-sizing: border-box;
+    text-align: left;
+    position: relative;
+}
+
+.box{
+    margin-top: 20px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.box hr{
+    margin: 20px 0;
+    border: 1px dashed #000;
+}
+
+/*-----course-----*/
+.course_img{
+    width: 950px;
+    height: 659px;
+    background-image: url(../sub/images/guide/course.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+.course_img div{
+    position: absolute;
+}
+.course_img div:first-child{
+    bottom: 60px;
+    left: 97px;
+}
+.course_img div:nth-child(2){
+    left: 228px;
+    top: 325px;
+}
+.course_img div:nth-child(3){
+    left: 331px;
+    top: 308px;
+    z-index: 1;
+}
+.course_img div:nth-child(4){
+    left: 355px;
+    top: 250px;
+}
+.course_img div:nth-child(5){
+    left: 373px;
+    top: 237px;
+}
+.course_img div:nth-child(6){
+    left: 504px;
+    top: 265px;
+}
+.course_img div:nth-child(7){
+    left: 405px;
+    top: 358px;
+}
+.course_img div:nth-child(8){
+    left: 514px;
+    top: 156px;
+}
+.course_img div:nth-child(9){
+    left: 562px;
+    top: 63px;
+}
+.course_img div:nth-child(10){
+    left: 600px;
+    top: 47px;
+}
+.course_img div:nth-child(11){
+    left: 423px;
+    top: 3px;
+}
+.course_img div:nth-child(12){
+    left: 256px;
+    top: 204px;
+}
+.course_img div:nth-child(13){
+    left: 268px;
+    top: 292px;
+}
+.course_img div:last-child{
+    left: 458px;
+    top: 315px;
+}
+
+.course_img div img:first-child{
+    position: relative;
+}
+.course_img div img:last-child{
+    position: absolute;
+    top: -9px;
+    left: -7px;
+    opacity: 0;
+    z-index: 2;
+}
+
+.course_li li{
+    width: 200px;
+    float: left;
+    height: 20px;
+    padding-left: 25px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+    background-image: url(../sub/images/guide/number.png);
+    background-repeat: no-repeat;
+    cursor: default;
+}
+.course_li li.on{
+    font-weight: bold;
+    color: #de574c;
+}
+.course_li li:nth-child(2){
+    background-position: 0 -20px;
+}
+.course_li li:nth-child(3){
+    background-position: 0 -40px;
+}
+.course_li li:nth-child(4){
+    background-position: 0 -60px;
+}
+.course_li li:nth-child(5){
+    background-position: 0 -80px;
+}
+.course_li li:nth-child(6){
+    background-position: 0 -100px;
+}
+.course_li li:nth-child(7){
+    background-position: 0 -120px;
+}
+.course_li li:nth-child(8){
+    background-position: 0 -140px;
+}
+.course_li li:nth-child(9){
+    background-position: 0 -160px;
+}
+.course_li li:nth-child(10){
+    background-position: 0 -180px;
+}
+.course_li li:nth-child(11){
+    background-position: 0 -200px;
+}
+.course_li li:nth-child(12){
+    background-position: 0 -220px;
+}
+.course_li li:nth-child(13){
+    background-position: 0 -240px;
+}
+.course_li li:last-child{
+    background-position: 0 -260px;
+}
+
+/*-----map-----*/
+.daum>div{
+    margin: 0 auto;
+}
+.transport{
+    margin-top: 50px;
+}
+.transport li div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #483a3a;
+    display: inline-block;
+    margin: 0 10px;
+}
+.transport li p{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.transport li ul li{
+    margin: 0 0 10px 30px;
+}

@@ -1,0 +1,59 @@
+section{
+    width: 1200px;
+    height: 797px;
+    background-image: url(../images/main_page/section.png);
+    background-repeat: no-repeat;
+    margin: 150px auto;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.calligraphy{
+    position: absolute;
+    top: 100px;
+    left: 335px;
+    opacity: 0;
+}
+.booking{
+    width: 324px;
+    height: 402px;
+    position: absolute;
+    top: 225px;
+    left: 0;
+}
+.history a{
+    width: 531px;
+    height: 155.56px;
+    position: absolute;
+    left: 335px;
+    top: 541px;
+    border-radius: 20px;
+    text-indent: -9999px;
+}
+.banner{
+    width: 511px;
+    height: 69px;
+    position: absolute;
+    left: 345px;
+    bottom: 10px;
+    overflow: hidden;
+}
+.banner img{
+    float: left;
+}
+.event{
+    width: 324px;
+    height: 354px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.contact a{
+    width: 324px;
+    height: 159px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    text-indent: -9999px;
+}

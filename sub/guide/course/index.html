@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>문화재청 경복궁</title>
+    <link rel="stylesheet" type="text/css" href="../../../css/basic.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/guide.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('.depth02').hide();
+            $('.depth01>li').mouseenter(function () {
+                $('.depth02').slideUp();
+                $(this).children('.depth02').slideDown();
+            })
+            $('.depth02').mouseleave(function () {
+                $('.depth02').slideUp();
+            })
+            
+            $('.course_img div').mouseenter(function(){
+                var li = $(this).index();
+                $('.course_li li').eq(li).addClass('on');
+                $(this).children('img:last-child').animate({
+                    opacity: 1
+                })
+            })
+            $('.course_img div').mouseleave(function(){
+                var li = $(this).index();
+                $('.course_li li').eq(li).removeClass('on');
+                $(this).children('img:last-child').animate({
+                    opacity: 0
+                })
+            })
+            $('.course_li li').mouseenter(function(){
+                var li = $(this).index();
+                $('.course_img div').eq(li).children('img:last-child').animate({
+                    opacity: 1
+                })
+                $(this).addClass('on');
+            })
+            $('.course_li li').mouseleave(function(){
+                var li = $(this).index();
+                $('.course_img div').eq(li).children('img:last-child').animate({
+                    opacity: 0
+                })
+                $(this).removeClass('on');
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <div class="top_logo"><a href="http://dreamwhale.dothome.co.kr/01_Gyeonbokgung/"></a></div>
+            <div class="top_nav">
+                <ul>
+                    <li><a href="#">ENG</a></li>
+                    <li><a href="http://dreamwhale.dothome.co.kr/01_Gyeonbokgung/sub/services/sitemap/">사이트맵</a></li>
+                </ul>
+            </div>
+            <div class="main_nav">
+                <ul class="depth01">
+                    <li class="nav_menu01"><a href="#none">관람안내</a>
+                        <ul class="depth02">
+                            <li><a href="#">관람 규칙 및 규정</a></li>
+                            <li><a href="http://dreamwhale.dothome.co.kr/01_Gyeonbokgung/sub/guide/course/">관람 코스 및<br>편의 시설 안내</a></li>
+                            <li><a href="#">관람 시간 및 요금</a></li>
+                            <li><a href="#none">관람 예약 및 신청</a></li>
+                            <li><a href="http://dreamwhale.dothome.co.kr/01_Gyeonbokgung/sub/guide/map/">오시는 길</a></li>
+                            <li><a href="#">주차 및 요금 안내</a></li>
+                            <li><a href="#">주변 둘러보기</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_menu02"><a href="#none">경복궁 행사</a>
+                        <ul class="depth02">
+                            <li><a href="#">야간 특별 관람</a></li>
+                            <li><a href="#">다례 체험</a></li>
+                            <li><a href="#">장고 개방</a></li>
+                            <li><a href="#">소주방 개방</a></li>
+                            <li><a href="#">수문장 교대 의식</a></li>
+                            <li><a href="#">왕가의 산책</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_menu03"><a href="#none">자료마당</a>
+                        <ul class="depth02">
+                            <li><a href="#none">경복궁 소개</a></li>
+                            <li><a href="#">알고싶은 이야기</a></li>
+                            <li><a href="#">가이드 북</a></li>
+                            <li><a href="#">간행물</a></li>
+                            <li><a href="#">언론보도</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav_menu04"><a href="#none">경복궁 관리소</a>
+                        <ul class="depth02">
+                            <li><a href="#">인사말</a></li>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">직원소개</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">자주하는 질문</a></li>
+                            <li><a href="https://www.e-minwon.go.kr/webs/menu.jsp?menu_id=info">민원 신청</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="side_nav">
+            <h1>관람 안내</h1>
+            <hr>
+            <ul>
+                <li><a href="#">관람 규칙 및 규정</a></li>
+                <li class="on"><a href="http://dreamwhale.dothome.co.kr/01_Gyeonbokgung/sub/guide/course/">관람 코스 및<br>편의 시설 안내</a></li>
+                <li><a href="#">관람 시간 및 요금</a></li>
+                <li><a href="#">관람 예약 및 신청</a></li>
+                <li><a href="http://dreamwhale.dothome.co.kr/01_Gyeonbokgung/sub/guide/map/">오시는 길</a></li>
+                <li><a href="#">주차 및 요금 안내</a></li>
+                <li><a href="#">주변 둘러보기</a></li>
+            </ul>
+        </div>
+        <div class="article">
+            <div class="course">
+                <h1>관람 코스 및 편의 시설 안내</h1>
+                <hr>
+                <div class="box">
+                    <div class="course_img">
+                        <div>
+                            <img src="../../images/guide/1.png" alt="광화문과 궁궐 담장">
+                            <img src="../../images/guide/hover/1.png" alt="광화문과 궁궐 담장">
+                        </div>
+                        <div>
+                            <img src="../../images/guide/2.png" alt="근정전 일원">
+                            <img src="../../images/guide/hover/2.png" alt="근정전 일원">
+                        </div>
+                        <div>
+                            <img src="../../images/guide/3.png" alt="사정전 일원">
+                            <img src="../../images/guide/hover/3.png" alt="사정전 일원">
+                        </div>
+                        <div>
+                            <img src="../../images/guide/4.png" alt="강녕전과 교태전">
+                            <img src="../../images/guide/hover/4.png" alt="강녕전과 교태전">
+                        </div>
+                        <div>
+                            <img src="../../images/guide/5.png" alt="흠경각과 함원전">
+                            <img src="../../images/guide/hover/5.png" alt="흠경각과 함원전">
+                        </div>
+                        <div>
+                            <img src="../../images/guide/6.png" alt="자경전 일원">
+                            <img src="../../images/guide/hover/6.png" alt="자경전 일원">
+                        </div>
+                        <div>
+                            <img src="../../images/guide/7.png" alt="동궁 일원">
+                            <img src="../../images/guide/hover/7.png" alt="동궁 일원">
+                        </div>
+                        <div>
+                            <img src="../../images/guide/8.png" alt="함화당과 집경당">
+                            <img src="../../images/guide/hover/8.png" alt="함화당과 집경당">
+                        </div>
+                        <div>
+                            <img src="../../images/guide/9.png" alt="향원정과 건청궁">
+                            <img src="../../images/guide/hover/9.png" alt="향원정과 건청궁">
+                        </div>
+                        <div>
+                            <img src="../../images/guide/10.png" alt="집옥재 일원">
+                            <img src="../../images/guide/hover/10.png" alt="집옥재 일원">
+                        </div>
+                        <div>
+                            <img src="../../images/guide/11.png" alt="태원전 일원">
+                            <img src="../../images/guide/hover/11.png" alt="태원전 일원">
+                        </div>
+                        <div>
+                            <img src="../../images/guide/12.png" alt="경희루">
+                            <img src="../../images/guide/hover/12.png" alt="경희루">
+                        </div>
+                        <div>
+                            <img src="../../images/guide/13.png" alt="수정전과 궐내각사">
+                            <img src="../../images/guide/hover/13.png" alt="수정전과 궐내각사">
+                        </div>
+                        <div>
+                            <img src="../../images/guide/14.png" alt="소주방">
+                            <img src="../../images/guide/hover/14.png" alt="소주방">
+                        </div>
+                    </div>
+                    <hr>
+                    <ul class="course_li">
+                        <li>광화문과 궁궐 담장</li>
+                        <li>근정전 일원</li>
+                        <li>사정전 일원</li>
+                        <li>강녕전과 교태전</li>
+                        <li>흠경각과 함원전</li>
+                        <li>자경전 일원</li>
+                        <li>동궁 일원</li>
+                        <li>함화당과 집경당</li>
+                        <li>향원정과 건청궁</li>
+                        <li>집옥재 일원</li>
+                        <li>태원전 일원</li>
+                        <li>경희루</li>
+                        <li>수정전과 궐내각사</li>
+                        <li>소주방</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="wrap">
+            <div class="footer_logo"></div>
+            <address>
+               우)03045 서울특별시 종로구 사직로 161  전화번호(02)3700-3900  팩스(02)3700-3909<br>
+               COPYRIGHT 2017 BY NA, SEUL-GEE. ALL RIGHTS RESERVED.
+            </address>
+            <ul class="copyright">
+               <li><a href="http://dreamwhale.dothome.co.kr/01_Gyeonbokgung/sub/services/privacy_detail/">개인정보처리방침</a> |</li>
+               <li><a href="http://dreamwhale.dothome.co.kr/01_Gyeonbokgung/sub/services/copyright_detail/">저작권정책</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

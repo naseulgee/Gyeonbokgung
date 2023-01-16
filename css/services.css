@@ -1,0 +1,107 @@
+section{
+    width: 1200px;
+    margin: 150px auto;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+}
+section>div{
+    float: left;
+}
+
+h1{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+hr{
+    border: 2px solid;
+}
+.side_nav{
+    width: 250px;
+    background-color: #483a3a;
+    border-radius: 20px;
+    color: white;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+.side_nav a{
+    display: block;
+    color: white;
+}
+.side_nav li a{
+    margin: 20px auto;
+    text-align: left;
+    cursor: pointer;
+}
+.side_nav li a:hover{
+    font-weight: bold;
+    color: #de574c;
+}
+.side_nav ul li.on a{
+    font-weight: bold;
+    color: #de574c;
+}
+
+.article{
+    width: 930px;
+    padding: 30px;
+    min-height: 700px;
+    box-sizing: border-box;
+    text-align: left;
+    position: relative;
+}
+
+.box{
+    margin-top: 20px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.box>ul>li{
+    float: left;
+    margin-right: 85px;
+    margin-bottom: 50px;
+}
+.box>ul>li:last-child{
+    clear: left;
+}
+.box>ul>li h1{
+    width: 200px;
+    height: 35px;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 15px;
+    box-sizing: border-box;
+    line-height: 29px;
+}
+.menu01{
+    background-color: #483a3a;
+}
+.menu02{
+    background-color: #846e6e;
+}
+.box>ul>li>ul>li{
+    list-style: disc;
+    margin-left: 35px;
+}
+.icon{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.privacy_detail table{
+    margin: 15px;
+}
+.privacy_detail table tr td{
+    text-align: center;
+    border: 2px solid #000;
+    padding: 5px;
+}
+.privacy_detail table tr:first-child{
+    background-color: #846e6e;
+    color: white;
+}
