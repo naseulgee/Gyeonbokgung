@@ -6,7 +6,7 @@
 ## 📖 주제: 경복궁 홍보 사이트
 <div align="center">
 
-<img alt="경복궁 홈페이지 소개 이미지" src="https://user-images.githubusercontent.com/73747247/212722205-82cc9527-439f-4f69-8949-abdd7d40d90e.gif" width="100%"/>
+<img alt="경복궁 홈페이지 소개 이미지" src="https://user-images.githubusercontent.com/73747247/213873528-4cb76dc1-73aa-4c2a-95c5-9b5bcf705b7f.jpg" width="100%"/>
 
 </div>
 
@@ -42,7 +42,7 @@
         <th colspan="2">모바일 페이지</th>
     </tr>
     <tr>
-        <td colspan="4"><img alt="메인 이미지" src="https://user-images.githubusercontent.com/73747247/212722723-9ba23534-672a-470f-b80f-c9f68e29b54c.png"/></td>
+        <td colspan="4"><img alt="메인 이미지" src="https://user-images.githubusercontent.com/73747247/212722205-82cc9527-439f-4f69-8949-abdd7d40d90e.gif"/></td>
         <td colspan="2"><img alt="모바일 이미지" src="https://user-images.githubusercontent.com/73747247/212741489-0e5ba24a-ce03-4592-a569-633bfcf1b03f.gif"/></td>
     </tr>
     <tr>
